@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquiladora de Sillas y Mesas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="images_inicio/ST.jpg" alt="Logo de la Alquiladora" class="logo">
+        <h1>RENTA DE SILLAS Y MESAS ST</h1>
+      </div>
+      <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="nav-links">
+          <li><a href="#services">INICIO</a></li>
+          <li><a href="#products">PRODUCTOS</a></li>
+          <li><a href="#galeria">GALERIA</a></li>
+          <li><a href="promociones/index.html">PROMOCIONES</a></li>
+          <li><a href="#contact">CONTACTO</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="services">
+      <div class="container">
+        <h2>¡Bienvenidos!</h2>
+        <div class="service">
+          <img src="images_inicio/principal1.jpg" alt="Servicio 1">
+          <h3>¡Bienvenidos al sitio web de Eventos!</h3>
+          <p>
+            Encontrar el toque perfecto para hacer de cada evento algo extraordinario es 
+            nuestro mayor placer. En cada rincón de nuestra página web, encontrarás la llave
+             para abrir la puerta a un mundo de posibilidades llenas de encanto y elegancia.<br>
+
+            ¿Buscas organizar una boda que deslumbre a todos tus invitados? ¿Un evento 
+            corporativo que deje huella en cada asistente? ¿O tal vez una fiesta de cumpleaños 
+            que haga brillar los ojos de tus seres queridos? Sea cual sea tu sueño, estamos aquí
+             para hacerlo realidad.<br>
+            Nuestro extenso catálogo ofrece una amplia selección de mobiliario, decoración y
+             equipamiento de alta calidad, diseñado para transformar cualquier espacio en un
+              escenario de fantasía. <br>
+            Sabemos que cada cliente es único, por lo que nos esforzamos por hacer que cada
+             evento sea una experiencia inolvidable y personalizada. Confiar en nosotros es
+              confiar en la excelencia y en la dedicación inquebrantable hacia la perfección.
+            Así que, déjanos ser tu aliado en la realización de tus sueños y juntos crearemos
+             momentos que trascenderán el tiempo y quedarán grabados en el corazón de
+              todos los presentes.<br>
+            ¡Bienvenido a un mundo de magia y posibilidades sin límites! Tu evento soñado
+             comienza aquí.
+
+          </p>
+          
+        </div>
+        <div class="service">
+          <img src="images_inicio/principal2.jpg" alt="Servicio 2">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <div class="product">
+          
+          <h3></h3>
+          <p>Contamos con una amplia variedad de sillas a la renta para todo tipo de eventos sociales 
+            (Bodas, XV Años, Graduaciones, Aniversarios, Cumpleaños, Fiestas Temáticas, etc.) o empresariales 
+            (Simposiums, Cursos de Entrenamiento, Festivales, Presentaciones de Productos, Inauguraciones, 
+            Fiestas de Fin de Año, Expos, etc.). <br>
+            Rentamos:<br>
+
+            Sillas de Plástico Plegables<br>
+            Sillas Metálicas Acojinadas<br>
+            Sillas Tiffany<br>
+            Sillas Infantiles.<br></p>
+          <div class="center-container">
+            <div class="slider-container">
+              <div class="slider">
+                <img src="images_inicio/cubre.jpg" alt="Imagen 1">
+                <img src="images_inicio/mesa.jpg" alt="Imagen 2">
+                <img src="images_inicio/mesar.jpg" alt="Imagen 3">
+                <img src="images_inicio/silla.jpg" alt="Imagen 3">
+                <!-- Agrega aquí más imágenes si lo deseas -->
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!--
+        <div class="product">
+          <img src="product2.jpg" alt="Producto 2">
+          <h3>Producto 2</h3>
+          <p>Descripción del producto 2.</p>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="product">
+          <div id="links-container">
+            <div class="link-item">
+              <a href="album_sencillo/index.html">
+                <img src="images_inicio/mesa.jpg" alt="Enlace 1" />
+                <p>PAQUETES SENCILLOS</p>
+              </a>
+            </div>
+            <div class="link-item">
+              <a href="album_vestidas/index.html">
+                <img src="images_inicio/inicio4.jpg" alt="Enlace 2" />
+                <p>PAQUETES DE PRESENTACIÓN</p>
+              </a>
+            </div>
+            <div class="link-item">
+              <a href="album_inflables/index.html">
+                <img src="images_inicio/principal3.jpg" alt="Enlace 3" />
+                <p>INFLABLES</p>
+              </a>
+            </div>
+            <!-- Puedes agregar más enlaces con la misma estructura -->
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form onsubmit="showMessage()">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <textarea placeholder="Mensaje" required></textarea>
+          <button type="submit" id="submit-button">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Contacto: storres.com.mx | Teléfono: 55 39 55 02 50 </p>
+      <ul class="social">
+        <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .producto {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .producto img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 0px;
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .producto {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Catálogo de Inflables</h1>
+  </header>
+
+  <section>
+    <div class="producto">
+      <img src="imagen1.jpg" alt="Producto 1">
+
+    </div>
+
+        <div class="producto">
+      <img src="imagen2.jpg" alt="Producto 1">
+
+    </div>
+
+    <div class="producto">
+      <img src="imagen3.jpg" alt="Producto 1">
+
+    </div>
+
+        <div class="producto">
+      <img src="imagen4.jpg" alt="Producto 1">
+
+    </div>
+
+        <div class="producto">
+      <img src="imagen5.jpg" alt="Producto 1">
+
+    </div>
+<!--
+    <div class="producto">
+      <img src="imagen2.jpg" alt="Producto 2">
+      <div class="descripcion">
+        <h2>Producto 2</h2>
+        <p>Descripción breve del Producto 2.</p>
+      </div>
+    </div>
+  
+
+    <div class="producto">
+      <img src="imagen3.jpg" alt="Producto 2">
+      <div class="descripcion">
+        <h2>Producto 2</h2>
+        <p>Descripción breve del Producto 2.</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="imagen4.jpg" alt="Producto 2">
+      <div class="descripcion">
+        <h2>Producto 2</h2>
+        <p>Descripción breve del Producto 2.</p>
+      </div>
+    </div>
+-->
+
+    <!-- Agregar más productos aquí -->
+
+  </section>
+
+  <script>
+    // Ejemplo de animación con JavaScript (utilizando el efecto "fadeIn" al hacer scroll)
+    window.addEventListener('scroll', () => {
+      const elementos = document.querySelectorAll('.producto');
+
+      elementos.forEach((elemento) => {
+        const posicion = elemento.getBoundingClientRect().top;
+        const alturaPantalla = window.innerHeight / 1.5;
+
+        if (posicion < alturaPantalla) {
+          elemento.style.opacity = 1;
+          elemento.style.transform = 'translateX(0)';
+        } else {
+          elemento.style.opacity = 0;
+          elemento.style.transform = 'translateX(-50px)';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
+
